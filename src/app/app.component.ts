@@ -8,15 +8,15 @@ import { observable, Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit{
   title = 'chat-app';
-  // observable = new Observable((observer) => {
-  //   console.log("Observable started");
-  //   observer.next("1");
-  //   observer.next("2");
-  //   observer.error(new Error("Some thing went wrong"));
-  //   observer.next("4");
-  //   observer.next("5");
-  //   observer.complete();
-  // });
+  observable = new Observable((observer) => {
+    console.log("Observable started");
+    observer.next("1");
+    observer.next("2");
+    observer.error(new Error("Some thing went wrong"));
+    observer.next("4");
+    observer.next("5");
+    observer.complete();
+  });
 
   // ngOnInit(){
   //   this.observable.subscribe((res) => {
