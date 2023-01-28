@@ -18,6 +18,8 @@ export class AppComponent implements OnInit{
     observer.complete();
   });
 
+  // test for commit 
+
   // ngOnInit(){
   //   this.observable.subscribe((res) => {
   //       console.log(res)
